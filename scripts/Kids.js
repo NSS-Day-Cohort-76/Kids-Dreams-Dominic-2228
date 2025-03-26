@@ -1,8 +1,8 @@
 import { getChildren } from "./database.js"
 
-const children = getChildren()
 
 export const Kids = () => {
+    const children = getChildren()
     let html = "<ol>"
 
     for (const child of children) {
