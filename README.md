@@ -35,10 +35,18 @@ Make sure your Developer Tools are open at all times while working on this proje
 Before you click the "Complete Assessment" button on the Learning Platform, add your answers below each question and make a commit.
 
 1. When a child is clicked on in the browser, which module contains the code that will execute on that event happening? Can you explain the algorithm of that logic?
-   > Your answer here
+   
+   The Kids.js module is what is being executed. If dataset.type is correct, grab the dataset.celebid and match it to the celebrity id being iterated over, and display the message containing those interpolations. 
+
 2. In the **Pairings** module, why must the `findCelebrityMatch()` function be invoked inside the `for..of` loop that iterates the kids array?
-   > Your answer here
+   
+   You are finding the match for each child. You need to call that function for each new kid object.
+
 3. In the **CelebrityList** module, can you describe how the name of the sport that the celebrity plays can be displayed in the window alert text?
-   > Your answer here
+   
+   Because of the iteration of the for loop, we have access to the properties of the Celebrities array. We can then store that data in the DOM and pull it on the addEventListener. 
+
 4. Can you describe, in detail, the algorithm that is in the `main` module?
-   > Your answer here
+   
+
+   we are selecting the first container ID in index.HTML, assigning to a variable. We then assign dynamically updated HTML a variable(applicationHTML), and pass in the function return values of each function, that inturn, are also generating HTML to fill the variable(applicationHTML). We then use the mainContainer variable used to grab the ID, and update the HTML using .innerHTML and assigning it to the variable apllicationHTML.
